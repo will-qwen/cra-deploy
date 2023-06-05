@@ -1,0 +1,20 @@
+version: "3"
+services:
+  route:
+    build:
+      context: .
+      dockerfile: router.Dockerfile
+    ports:
+      - 3000:80
+  simple:
+    build:
+      context: .
+      dockerfile: simple.Dockerfile
+    ports:
+      - 4000:80
+  oss:
+    build:
+      context: .
+      dockerfile: oss.Dockerfile
+    ports:
+      - 8000:80
