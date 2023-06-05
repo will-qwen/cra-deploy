@@ -18,3 +18,5 @@ services:
       dockerfile: oss.Dockerfile
     ports:
       - 8000:80
+
+
