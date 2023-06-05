@@ -12,7 +12,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '14'
-
-
-
       
+
+      - name: 安装依赖
+        run: yarn
+      
+      - name: ESLint
+        run: npm run build
